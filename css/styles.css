@@ -23,8 +23,16 @@ a {
   font-size: 50;
 }
 
+.banner-description {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
 .nav-item {
   padding: 0 20px;
+}
+
+.download-button {
+  padding-top: 1rem;
 }
 
 /* banner-section */
