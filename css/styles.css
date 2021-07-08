@@ -102,18 +102,23 @@ a {
 }
 
 .features {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
   text-align: center;
 }
 
 .features h3 {
-  margin: 5% auto;
+  margin: 10% auto 5% auto;
 }
 
 .features p {
   margin: 5% auto 10% auto;
   line-height: 200%;
+}
+
+.img {
+  height: auto;
+  width: 230px;
 }
 
 /* use-example section */

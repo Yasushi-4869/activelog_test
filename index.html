@@ -15,7 +15,7 @@
   <!-- Bootstrap Script -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,9 +96,30 @@
         <div class="col-lg-3">
           <div class="features">
             <div class="features-img">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="50" fill="gray" />
-              </svg>
+              <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/メイン画面(ストップウォッチ)@3x.png" alt="ストップウォッチ画面の画像" class="d-block w-100 img">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/メイン画面(タイマー)@3x.png" class="d-block w-100 img" alt="タイマー画面の画像" >
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/メイン画面(サイクルタイマー)@3x.png" class="d-block w-100 img" alt="サイクルタイマー画面の画像">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/メイン画面(カスタム)@3x.png" class="d-block w-100 img" alt="カスタムタイマー画面の画像">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval2" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval2" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
             </div>
             <h3>4種類のタイマー</h3>
             <p>「ストップウォッチ」「タイマー」「サイクルタイマー」「カスタムタイマー」どのような使い方でもできるようにあらゆるタイマーを搭載。HIIT、サーキットトレーニング、ポモドーロテクニック、時間を測らないとできないようなことはこのアプリひとつですみます。</p>
@@ -107,9 +128,28 @@
         <div class="col-lg-3">
           <div class="features">
             <div class="features-img">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="50" fill="gray" />
-              </svg>
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/カレンダー(フル表示)@3x.png" class="d-block w-100 img" alt="カレンダー月別表示の画像">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/カレンダー - 日別表示@3x.png" class="d-block w-100 img" alt="カレンダー日別表示の画像">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/カレンダー - 日別表示(タスク)@3x.png" class="d-block w-100 img" alt="カレンダータスク別表示の画像">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+              <!-- <img src="images/カレンダー(フル表示)@3x.png" alt="カレンダーの画像" class="img"> -->
             </div>
             <h3>カレンダー</h3>
             <p>アプリ内でタイマーをスタートさせた時間と終わった時間を記録してます。タイマーを使うだけでカレンダーにやったことが自動で記述されていきます。いつどのくらいの時間をやったのか一目でわかります。</p>
@@ -118,9 +158,10 @@
         <div class="col-lg-3">
           <div class="features">
             <div class="features-img">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="50" cy="50" r="50" fill="gray" />
-              </svg>
+              </svg> -->
+              <img src="images/記録画面 １@3x.png" alt="メモ画面の画像" class="w-100 img">
             </div>
             <h3>メモ機能</h3>
             <p>タイマーが終わった後の記録画面でメモを残すことができます。勉強内容やトレーニング内容などを書き残すことで、見返したときに自分のやってきた軌跡を辿ることができます</p>
@@ -129,9 +170,10 @@
         <div class="col-lg-3">
           <div class="features">
             <div class="features-img">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="50" cy="50" r="50" fill="gray" />
-              </svg>
+              </svg> -->
+              <img src="images/マイページ – 登録してタスクの一覧(拡張) - カスタムver@3x.png" alt="登録画面の画像" class="w-100 img">
             </div>
             <h3>タスク登録</h3>
             <p>タイマーをいろいろなことで使う場合、使うたびに時間を設定するのは面倒ですよね？その問題を解消するためにタスク登録機能を追加しました。予めタイマーの種類と時間を設定しておくことで始める前にいちいち時間を設定する必要がなくなります。</p>
@@ -216,7 +258,7 @@
         <div class="footer-line"></div>
         <p>お問い合わせは開発者twitterのDMへ</p>
         <div class="social-media">
-          <a href="https://twitter.com/home"><span class="fab fa-twitter"></span>@YasuHicky</a>
+          <a href="https://twitter.com/messages/compose?recipient_id=1009778600554348544"><span class="fab fa-twitter"></span>@YasuHicky</a>
         </div>
         <div class="footer-line"></div>
 
