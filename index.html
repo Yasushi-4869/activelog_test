@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>アクティブログ</title>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3LDEGMVHL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-N3LDEGMVHL');
+  </script>
+
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/styles.css">
 
@@ -28,7 +41,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-          <a class="navbar-brand" href="">Active Log~アクティブログ~(仮)</a>
+          <a class="navbar-brand" href="">Active Log~アクティブログ~</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,10 +68,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h1>もっとも簡単に行動を記録できるアプリです</h1>
+          <h1>【記録】の手間を圧倒的に減らします。</h1>
           <div class="banner-description">
-            <p>「タイマー」「カレンダー」「メモ」がひとつになり、タイマーを使うだけで自動でカレンダーに記録されていきます</p>
-            <p>その際にメモを残すことで過去の自分と比較してどれだけ進歩しているか一目瞭然です</p>
+            <h5>記録をするために必要な動作は最短で2回タップするだけ。</h5>
+            <h5>タイマーが鳴ったときには記録が完了しています。</h5>
           </div>
           <div class="download-button">
             <button type="button" class="download-btn btn btn-light btn-lg"><i class="fab fa-apple"></i> Download</button>
@@ -96,19 +109,47 @@
         <div class="col-lg-3">
           <div class="features">
             <div class="features-img">
-              <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+              <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="3000">
                     <img src="images/Stopwatch.png" alt="ストップウォッチ画面の画像" class="d-block w-100 img">
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/Timer.png" class="d-block w-100 img" alt="タイマー画面の画像" >
+                    <img src="images/Timer.png" class="d-block w-100 img" alt="タイマー画面の画像">
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
                     <img src="images/CycleTimer.png" class="d-block w-100 img" alt="サイクルタイマー画面の画像">
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
                     <img src="images/CustomTimer.png" class="d-block w-100 img" alt="カスタムタイマー画面の画像">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval1" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval1" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+            </div>
+            <h3>4種類のタイマー</h3>
+            <p>ストップウォッチやタイマーだけでなく、「HIIT」、「サーキットトレーニング」、「ポモドーロテクニック」など変則的な時間で行うような活動もできるように4種類のタイマーを搭載しています。時間を管理して行う活動はこのアプリひとつでできるようになります。
+              いちいち新しいタイマーを探す必要がなくなります。
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="features">
+            <div class="features-img">
+              <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/calendar.png" class="d-block w-100 img" alt="カレンダー月別表示の画像">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/calendar_daily.png" class="d-block w-100 img" alt="カレンダー日別表示の画像">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleInterval2" role="button" data-bs-slide="prev">
@@ -120,51 +161,42 @@
                   <span class="visually-hidden">Next</span>
                 </a>
               </div>
+              <!-- <img src="images/カレンダー(フル表示)@3x.png" alt="カレンダーの画像" class="img"> -->
             </div>
-            <h3>4種類のタイマー</h3>
-            <p>「ストップウォッチ」「タイマー」「サイクルタイマー」「カスタムタイマー」どのような使い方でもできるようにあらゆるタイマーを搭載。HIIT、サーキットトレーニング、ポモドーロテクニック、時間を測らないとできないようなことはこのアプリひとつですみます。</p>
+            <h3>カレンダー</h3>
+            <p>アプリ内で「タイマーを始めた時間」、「タイマーが鳴った時間」を記録しています。なので、タイマー鳴ったときにはカレンダーに記録されています。開始時間、終了時間を覚えておいて行動が終わってからカレンダーに入力する必要がなくなります。
+              さらにやったことはいつでも振り返ることが可能です。</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="features">
             <div class="features-img">
-              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div id="carouselExampleInterval3" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="images/calendar.png" class="d-block w-100 img" alt="カレンダー月別表示の画像">
+                    <img src="images/Memo.png" class="d-block w-100 img" alt="記録画面の画像">
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/calendar_daily.png" class="d-block w-100 img" alt="カレンダー日別表示の画像">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/calendar_daily_task.png" class="d-block w-100 img" alt="カレンダータスク別表示の画像">
+                    <img src="images/calendar_daily_task.png" class="d-block w-100 img" alt="カレンダーの日別タスクの画像">
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+                <a class="carousel-control-prev" href="#carouselExampleInterval3" role="button" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+                <a class="carousel-control-next" href="#carouselExampleInterval3" role="button" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </a>
               </div>
-              <!-- <img src="images/カレンダー(フル表示)@3x.png" alt="カレンダーの画像" class="img"> -->
-            </div>
-            <h3>カレンダー</h3>
-            <p>アプリ内でタイマーをスタートさせた時間と終わった時間を記録してます。タイマーを使うだけでカレンダーにやったことが自動で記述されていきます。いつどのくらいの時間をやったのか一目でわかります。</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="features">
-            <div class="features-img">
               <!-- <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="50" cy="50" r="50" fill="gray" />
               </svg> -->
-              <img src="images/Memo.png" alt="メモ画面の画像" class="w-100 img">
+              <!-- <img src="images/Memo.png" alt="メモ画面の画像" class="w-100 img"> -->
             </div>
-            <h3>メモ機能</h3>
-            <p>タイマーが終わった後の記録画面でメモを残すことができます。勉強内容やトレーニング内容などを書き残すことで、見返したときに自分のやってきた軌跡を辿ることができます</p>
+            <h3>メモ</h3>
+            <p>タイマーが鳴った後の記録画面でメモを残すことができます。これは強制ではありません。あなたの自由です。本を読んだときは、読んだ内容を記入することで知識の定着につながります。
+              運動をしたときは、どんなメニューで運動をしたかを残すこともできます。メモを残して後から見返すことで自分がこれまでにやったことを確認できるのでどれだけやってきたのかを実感できます。</p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -176,7 +208,8 @@
               <img src="images/mypage.png" alt="登録画面の画像" class="w-100 img">
             </div>
             <h3>タスク登録</h3>
-            <p>タイマーをいろいろなことで使う場合、使うたびに時間を設定するのは面倒ですよね？その問題を解消するためにタスク登録機能を追加しました。予めタイマーの種類と時間を設定しておくことで始める前にいちいち時間を設定する必要がなくなります。</p>
+            <p>このアプリではタスクとして事前に「活動の名前」、「使うタイマーの種類」、「時間」などを登録しておくことが可能です。あらかじめ登録しておくことで、活動を始める前に登録したタスクを呼び出すだけで始める準備が整います。
+              始めるまでのハードルが下がることで、活動を継続しやすくなります。</p>
           </div>
         </div>
       </div>
@@ -194,10 +227,17 @@
           </svg>
         </div>
         <div class="col-lg-7 use-text">
-          <h3>習慣を作るときのモチベーション維持をサポート</h3>
-          <p>サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。
-            サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。
-            サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。</p>
+          <h3>日々の習慣の記録に。</h3>
+          <div class="use-description">
+            <p>「すでに習慣になっていること」や「これから習慣いしようと思っていること」を行うたびに日時などを記入することって面倒ですよね？
+            </p>
+            <p>
+              このアプリではタイマーを使うだけで自動で記録されるので、毎回記入するの手間はありません。さらに記録されたことはアプリ内のカレンダーからいつでも見返すことができます。
+            </p>
+            <p>
+              自分が「何日続けているのか」や「合計で何時間やっているのか」わかるのでモチベーションの維持にもなります。
+            </p>
+          </div>
         </div>
       </div>
       <div class="row use-example-2">
@@ -207,34 +247,58 @@
           </svg>
         </div>
         <div class="col-lg-7 use-text">
-          <h3>料理にも</h3>
-          <p>サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。
-            サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。
-            サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。</p>
+          <h3>美味しい料理を作るときに。</h3>
+          <div class="use-description">
+            <p>茹で時間や煮込み時間など時間を測るときにもこのアプリは役に立ちます。
+            </p>
+            <p>
+              初めて作る料理でレシピを調べて美味しく作ることができても、2回目に作るときに茹で時間などを忘れてしまうことはありませんか？
+            </p>
+            <p>
+              そんなときはタスク登録機能を使って、作りたい料理名などをタイトルにして茹で時間を登録してください。
+              そうすれば料理に必要な時間を忘れることはなくなります。
+            </p>
+            <p>
+              もし改善点があるときは、メモにその内容を書き残せばあなたの料理はもっと美味しくなるでしょう。
+            </p>
+            <p>
+              パートナーや気になるあの人の胃袋もを掴むことも夢ではないかもしれませんね。
+            </p>
+          </div>
         </div>
 
       </div>
-      <div class="row use-example-3">
+      <!-- <div class="row use-example-3">
         <div class="col-lg-5 use-img">
           <img src="images/Studying-bro.png" alt="勉強のイラスト" class="example-img">
           <a href="https://storyset.com/education">Education illustrations by Storyset</a>
         </div>
         <div class="col-lg-7 use-text">
           <h3>仕事や勉強のおともに</h3>
-          <p>サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。
-            サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。
-            サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。</p>
+          <div class="use-description">
+            <p>サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。
+              サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。
+              サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。サブコピー的な文章を入力予定。
+            </p>
+          </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
   <!-- download -->
   <section id="download">
     <div class="container text-center">
       <div class="download-copy">
-        <h2>アプリを手にとってより良い生活を手に入れよう</h2>
+        <h2>アプリをインストールしてより良い生活を手に入れよう。</h2>
         <div class="line"></div>
-        <h5>記録、習慣化、料理、運動などあらゆることに使えるタイマー！！紹介した機能以外も随時追加予定！</h5>
+        <div class="closing-copy">
+          <h5>記録、習慣化、料理、運動などあらゆることに使えるタイマーです。</h5>
+          <h5>アプリをインストールして自分の行動を記録して、人生をよくするきっかけにしてみてはいかがでしょうか？</h5>
+        </div>
+        <div class="notice">
+          <h6>現在絶賛開発中</h6>
+          <h6>上記で紹介した機能以外も様々な機能を実装予定</h6>
+        </div>
         <p>＊実装予定機能</p>
 
         <ul>
@@ -259,9 +323,10 @@
         <p>お問い合わせは開発者twitterのDMへ</p>
         <div class="social-media">
           <a href="https://twitter.com/messages/compose?recipient_id=1009778600554348544"><span class="fab fa-twitter"></span>@YasuHicky</a>
+          <!-- <a class="twitter-timeline" href="https://twitter.com/YasuHicky?ref_src=twsrc%5Etfw">Tweets by YasuHicky</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
         </div>
-        <div class="footer-line"></div>
-
+        <div class="footer-line bottom-line"></div>
+        <p class="copylight">© 2021 Yasushi Oda</p>
       </div>
     </footer>
   </section>

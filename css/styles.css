@@ -25,8 +25,9 @@ a {
 
 .banner-description {
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
+
 .nav-item {
   padding: 0 20px;
 }
@@ -69,12 +70,13 @@ a {
 }
 
 .waves {
-  position:relative;
+  position: relative;
   width: 100%;
-  height:15vh;
-  margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
 }
 
 /* features-section */
@@ -109,11 +111,13 @@ a {
 
 .features h3 {
   margin: 10% auto 5% auto;
+  color: #111111;
 }
 
 .features p {
-  margin: 5% auto 10% auto;
-  line-height: 200%;
+  margin: 7% auto 10% auto;
+  line-height: 170%;
+  color: #333333;
 }
 
 .img {
@@ -160,7 +164,6 @@ a {
 
 .use-text p {
   line-height: 1.6;
-
 }
 
 .use-text h3 {
@@ -195,17 +198,30 @@ a {
   margin-right: 5px;
 }
 
+.use-description p {
+  margin-bottom: 0;
+}
+
 .download-copy {
   color: white;
 }
 
-.download-copy h5 {
+.closing-copy {
+  margin-top: 2rem;
+}
+
+.notice {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .download-copy ul {
-  list-style: none;
+  /* list-style: none; */
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  list-style-position: inside;
+  padding: 0;
 }
 
 .download-push {
@@ -234,6 +250,10 @@ a {
   margin: 2rem auto 2rem auto;
 }
 
+.bottom-line {
+  margin-bottom: 0;
+}
+
 .social-media a {
   text-decoration: none;
 }
@@ -242,14 +262,26 @@ a {
   margin-right: 10px;
 }
 
+.copylight {
+  margin-top: 20px;
+}
+
 /* media query */
 @media screen and (max-width:990px) {
+  h1 {
+    text-align: center;
+  }
+
+  .banner-description {
+    text-align: center;
+  }
+
   .download-button {
     text-align: center;
   }
 
   #how-to-use h3 {
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
   }
 
   .use-img {
@@ -262,5 +294,16 @@ a {
 
   .use-example-2 .use-text {
     order: 0;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .download-button p {
+    display: block;
+    text-align: center;
+  }
+
+  .features {
+    margin: 7% auto;
   }
 }
