@@ -1,3 +1,6 @@
-url: "yasushi-4869.github.io/activelog_test/"
-gems:
-– jekyll-sitemap
+source 'https://rubygems.org'
+
+gem 'jekyll'
+
+plugins:
+  - jekyll-sitemap
