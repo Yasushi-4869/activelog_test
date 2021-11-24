@@ -45,7 +45,11 @@ a {
   margin-bottom: 5%;
 }
 
-#banner a {
+/* #banner a {
+  color: white;
+} */
+
+.storyset-credit-link {
   color: white;
 }
 
